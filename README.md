@@ -1,2 +1,0 @@
-# dota2nicknamegenerator
-namegenerator
