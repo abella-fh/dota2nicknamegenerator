@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор эщкере ников для Дота 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        #nickname {
+            margin: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        button {
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+        .link {
+            margin-top: 20px;
+            display: block;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .small-gif {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div style="padding-top:179.791%;position:relative;">
+            <iframe src="https://gifer.com/embed/GBon" width="100%" height="100%" style="position:absolute;top:0;left:0;" frameBorder="0" allowFullScreen></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Генератор эщкере ников для Дота 2</h1>
+        <!-- Маленькая гифка -->
+        <div class="small-gif">
+            <div class="tenor-gif-embed" data-postid="25100533" data-share-method="host" data-aspect-ratio="1.22137" data-width="100%">
+                <a href="https://tenor.com/view/brawl-stars-shampanov-%D1%88%D0%B0%D0%BC%D0%BF%D0%B0%D0%BD%D0%BE%D0%B2-gif-25100533">Brawl Stars Shampanov GIF</a>from 
+                <a href="https://tenor.com/search/brawl+stars-gifs">Brawl Stars GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <div id="nickname">Ваш ник</div>
+        <button onclick="generateNickname()">Генерировать</button>
+        <a href="#" class="link">тык</a>
+    </div>
+
+    <script>
+        const nicknames = [
+            "大雞巴",
+            "ЧЕТЫРКА",
+            "пыштергенски",
+            "фалымон",
+            "гей для душа",
+            "kiskader",
+            "хуес",
+            "Kpacaва бля пидapac",
+            "фидазавр",
+            "екалэмэнэ"
+        ];
+
+        function generateNickname() {
+            const randomIndex = Math.floor(Math.random() * nicknames.length);
+            document.getElementById('nickname').textContent = nicknames[randomIndex];
+        }
+    </script>
+</body>
+</html>
